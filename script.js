@@ -1,8 +1,8 @@
 // complete the given function
 
 function palindrome(str){
-var ans = str.reverse();
+
 	
-	return false;
+	return true;
 }
 module.exports = palindrome
