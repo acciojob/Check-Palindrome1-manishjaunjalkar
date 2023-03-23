@@ -1,10 +1,10 @@
 // complete the given function
 
 function palindrome(str){
-	str = str.toUpperCase();
-	var start =0;
-	var end = str.length-1;
-while (start<=end) {
+	str = str.toLowerCase();
+	let start =0;
+	let end = str.length-1;
+	while (start<=end) {
 	if(str.charAt(start)===str.charAt(end)){
 		start++;
 		end--;
@@ -14,8 +14,6 @@ while (start<=end) {
 	}
 	
 }
-	return true;
-	
-	
+	return true;	
 }
 module.exports = palindrome
