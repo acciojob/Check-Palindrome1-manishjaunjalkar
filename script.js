@@ -5,11 +5,14 @@ function palindrome(str){
 	var start =0;
 	var end = str.length()-1;
 while (start<=end) {
-	if(str.charAt(start)!=str.charAt(end)){
+	if(str.charAt(start)===str.charAt(end)){
+		start++;
+		end--;
+	}
+	else{
 		return false;
 	}
-	start++;
-	end--;
+	
 }
 	return true;
 	
